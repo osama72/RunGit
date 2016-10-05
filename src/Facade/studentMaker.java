@@ -1,11 +1,9 @@
-package Facade;
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
+package Facade;
 
 /**
  *
@@ -13,10 +11,10 @@ package Facade;
  */
 public class studentMaker {
     private static studentMaker aMaker;
-    private Student studentIT;
+    private Student itStudent;
     private Student engStudent;
     private studentMaker (){
-        studentIT = new ITStudent();
+        itStudent = new ITStudent();
         engStudent = new ENGStudent();
     }
     
@@ -26,11 +24,11 @@ public class studentMaker {
     return aMaker;
     }
     
-    public void viewITStudent(){
-        studentIT.show();
+    public void showITStudent(){
+        itStudent.show();
     }
     
-    public void viewENGTStudent(){
+    public void showENGTStudent(){
         engStudent.show();
     }
 }
