@@ -14,8 +14,8 @@ import Facade.studentMaker;
 public class facadeMain {
     public static void main(String[] args) {
         studentMaker amMaker = studentMaker.getMaker();
-        amMaker.showENGTStudent();
         amMaker.showITStudent();
+        amMaker.showENGTStudent();
     }
     
 }
